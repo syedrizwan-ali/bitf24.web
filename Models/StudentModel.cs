@@ -1,5 +1,4 @@
-﻿using FCIT.BITF24A.Web.OrmModels;
-
+﻿
 namespace FCIT.BITF24A.Web.Models
 {
     public class StudentModel
@@ -14,12 +13,5 @@ namespace FCIT.BITF24A.Web.Models
             
         }
 
-        public StudentModel(Student student)
-        {
-            ID = student.Id;
-            Name = student.Name;
-            RollNumber = student.RollNumber;
-            CreateOn = student.CreatedOn;
-        }
     }
 }

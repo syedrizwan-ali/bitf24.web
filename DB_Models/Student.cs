@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace FCIT.BITF24A.Web.OrmModels;
+namespace FCIT.BITF24A.Web.DB_Models;
 
 public partial class Student
 {

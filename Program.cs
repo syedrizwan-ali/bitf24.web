@@ -1,11 +1,11 @@
+using FCIT.BITF24A.Web.DB_Models;
 using FCIT.BITF24A.Web.DiPractice_01;
-using FCIT.BITF24A.Web.OrmModels;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddDbContext<Bitf24DbContext>(o => 
+builder.Services.AddDbContext<Bitf24aDbContext>(o => 
     o.UseSqlServer(connectionString)
     );
 
@@ -33,6 +33,8 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapStaticAssets();
+
+app.MapControllers();
 
 app.MapControllerRoute(
     name: "default",
